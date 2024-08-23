@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font-awesome  -->
+    <script src="https://kit.fontawesome.com/7deee25e9f.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind css & daisi ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind css configeration  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                black1: '#212121',
+                black2: '#494949',
+                black3: '#737373',
+                green1: '#ABEF5F',
+                green2: 'rgba(171, 239, 95, 0.5)',
+                green3: 'rgba(171, 239, 95, 0.2)',
+              },
+              fontFamily: {
+               Manrope:'Manrope',
+              }
+            }
+          }
+        }
+      </script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="font-Manrope">
+  <header class="lg:container md:container mx-auto w-11/12 md:w-11/12 bg-[linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)] ">
+   <!-- navbar section start  -->
+   <div class="navbar flex  space justify-between lg:mt-12 mt-6">
+    <div class="">
     
+      <a class="flex  gap-2 items-center text-3xl font-extrabold"><i class="fa-solid fa-arrow-right -rotate-45 bg-green1 size-8 flex justify-center items-center rounded-full text-2xl"></i> Rinterio</a>
+    </div>
+    <div class=" hidden lg:flex justify-center">
+      <ul class="flex  text-black3 gap-6 font-medium">
+        <li><a class="font-bold text-black1">Home</a></li>
+        <li><a>Services</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Blogs</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+    <div class=" gap-3   flex justify-end">
+      <div class="hidden lg:block">
+      <i class="fa-solid fa-magnifying-glass size-12 flex justify-center items-center rounded-full text-2xl border border-stone-100"></i> 
+      </div>
+      <div class="hidden md:block lg:block">
+      <i class="fa-solid fa-cart-shopping size-12 flex justify-center items-center rounded-full text-2xl border border-stone-100"></i> 
+      </div>
+     <div class="hidden md:block lg:block">
+        <a class="  btn  font-extrabold text-xl bg-green1 rounded-full">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-[#1C1C1C] text-white text-lg size-8 flex justify-center items-center rounded-full text-2xl"></i></a>
+     </div>
+        <div class="dropdown lg:hidden">
+        <div tabindex="0" role="button" class=" ">
+
+       <div class="">
+        <i class="fa-solid fa-bars size-12 flex justify-center items-center rounded-full text-2xl border border-stone-100"></i> 
+       </div>
+
+        </div>
+        <ul
+          tabindex="0"
+          class="right-2 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-26 p-2 shadow">
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+   <!-- navbar section end -->
+    <!-- banner sectin start  -->
+   <section class="text-center">
+    <div class="lg:mt-6 mt-5 ">
+        <img class="mx-auto" src="assets/banner.png" alt="">
+    </div>
+    <h1 class="lg:text-6xl md:text-5xl text-4xl text-black1 font-extrabold lg:mb-6 mb-4">A barn house of this design has a <br> striking appearance</h1>
+    <p class="font-medium text-black3 lg:text-base md:text-base text-sm">
+        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+    </p>
+    <div class="lg:my-12 md-10 my-5">
+        <a class="  btn  font-extrabold text-xl bg-green2 rounded-full">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-green1 text-balck2 text-lg size-8 flex justify-center items-center rounded-full text-2xl"></i></a>
+     </div>
+   </section>
+    <!-- banner section end -->
+  </header>
+  <main class="">
+     <!-- about section start  -->
+
+   
+    <!-- about section end -->
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>
